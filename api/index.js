@@ -30,7 +30,7 @@ function getDigits(url, names) {
   return "";
 }
 function phoneKey(url) {
-  const phone = getDigits(url, ["ApiPhone", "Phone", "caller_id", "ApiCallerId"]);
+  const phone = getDigits(url, ["ApiPhone", "ApiPhoneNumber", "Phone", "phone", "caller_id", "CallerId", "ApiCallerId"]);
   return phone || "anonymous";
 }
 async function redis(command, ...args) {
